@@ -524,7 +524,7 @@ def getRecommendedProperties(request):
     # for i in properties.index:
     #     parking.at[i, 'parking'] = 0 if (properties.at[i, 'parkingcharges'] == 0) else 1
 
-    roomsDF = pd.read_csv('rooms.csv', index_col='id')
+    roomsDF = pd.read_csv('rooms.csv', index_col = 'id')
     # print(properties.index)
     # roomsCondition = roomsDF.property_id.isin(properties.index)
     roomsDF = roomsDF[roomsDF.property_id.isin(properties.index)]
