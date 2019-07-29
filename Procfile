@@ -1,0 +1,1 @@
+web: gunicorn YOR_DataScience_Applications.wsgi
