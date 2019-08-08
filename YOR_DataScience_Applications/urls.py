@@ -19,9 +19,10 @@ from AffordableLiving import views
 urlpatterns = [
     path('', views.affordableLiving),
     path('admin/', admin.site.urls),
-    path('getRecommendedProperties/',views.getRecommendedProperties),
-    path('module2/', views.module2),
-    path('module3/', views.module3),
-    path('report/',views.report)
+    path('affliving/',views.getRecommendedProperties),
+    # path('module2/', views.module2),
+    # path('module3/', views.module3),
+    path('report/',views.report),
+    path('getRecommendedProperties/',views.central_model)
 
 ]

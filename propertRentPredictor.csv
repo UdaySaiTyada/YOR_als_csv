@@ -1,0 +1,287 @@
+id,owner_id,locality,city,sqftsuper,type,totalrooms,rent,status,latitude,longitude,gender,tag_as
+1,442,Ulsoor,bengaluru,1800,flat,3,31800,blocked,12.976728,77.625949,1,managed
+2,120,Whitefield,bengaluru,450,flat,0,12000,blocked,12.963743,77.732867,0,managed
+3,348,Koramangala,bengaluru,510,flat,2,42469,available,12.928373,77.631766,1,managed
+4,120,Whitefield,bengaluru,1450,flat,3,12000,blocked,12.963745,77.732865,0,managed
+5,352,Bellandur,bengaluru,510,flat,3,40793,available,12.916868,77.690241,1,managed
+6,805,Bellandur,bengaluru,2400,flat,4,51000,occupied,12.918846,77.689174,1,managed
+7,798,Devanahalli,bengaluru,3755,flat,4,30900,occupied,13.204987,77.639311,1,managed
+8,7,HSR Layout,bengaluru,1305,flat,3,26000,occupied,12.9152649,77.6591148,1,managed
+9,797,Sarjapur Main Road,bengaluru,336,flat,2,23590,blocked,12.918184,77.669517,1,managed
+10,292,Mahadevapura,bengaluru,1565,flat,3,34729,occupied,12.978776,77.696805,1,managed
+11,773,Whitefield,bengaluru,2400,flat,4,40600,blocked,13.020816,77.761856,1,managed
+13,773,Whitefield,bengaluru,2400,flat,4,40600,blocked,13.020816,77.761856,2,managed
+17,120,Horamavu,bengaluru,1000,flat,2,40000,blocked,13.020175,77.66657,1,managed
+18,351,Whitefield,bengaluru,2400,flat,4,24000,blocked,13.020816,77.761856,0,marketplace
+20,1058,Electronic City,bengaluru,2050,villa,3,20000,blocked,12.830007,77.708026,0,marketplace
+21,120,"Ashok Nagar, Kandivali East",pune,1100,flat,2,49800,blocked,19.198124,72.854266,0,managed
+22,120,Electronic City,bengaluru,1609,flat,3,0,blocked,,,0,managed
+23,804,Sarjapur Main Road,bengaluru,1920,flat,3,69700,blocked,12.918245,77.66948,1,marketplace
+25,800,Manyata Tech Park,bengaluru,2050,flat,3,23031,occupied,13.066772,77.625197,1,managed
+26,772,Mahadevapura,bengaluru,1570,flat,3,32414,available,12.978776,77.696805,1,managed
+27,120,Wagholi,pune,865,flat,2,11000,blocked,18.585016,73.96996,0,managed
+28,349,Sarjapur Main Road,bengaluru,1925,flat,3,43000,partial,12.910867,77.682427,1,managed
+29,347,Dundahera,noida_ghaziabad,1029,flat,3,12580,partial,28.628851,77.436819,1,managed
+30,2125,Thyvakanahally,bengaluru,4500,villa,5,35000,blocked,12.834246,77.782726,2,marketplace
+31,120,Horamavu,bengaluru,1200,flat,2,25000,blocked,13.019774,77.666491,1,managed
+32,120,Wakad,pune,1346,flat,2,21500,blocked,18.590896,73.760496,0,managed
+33,878,Electronic City,bengaluru,1230,flat,3,29700,blocked,12.78411,77.657984,2,marketplace
+34,878,Electronic City,bengaluru,1230,flat,3,29700,blocked,12.78411,77.657984,0,marketplace
+35,803,Electronic City,bengaluru,925,flat,2,29700,available,12.78411,77.657984,1,marketplace
+36,802,Sarjapur,bengaluru,3083,house,3,39139,occupied,12.9097252,77.6728556,1,managed
+37,802,Sarjapur,bengaluru,3359,house,4,51818,occupied,12.90573,77.700959,1,managed
+38,801,Manyata Tech Park,bengaluru,1752,flat,3,26460,partial,13.066772,77.625197,2,managed
+39,120,Bommanahalli,bengaluru,1564,flat,2,36000,blocked,12.905403,77.627974,0,managed
+40,806,Wagholi,pune,917,flat,2,13500,available,18.571841,73.976455,0,marketplace
+41,771,Sarjapur Main Road,bengaluru,1447,flat,3,22050,partial,12.898186,77.702837,1,managed
+42,133,Koramangala,bengaluru,2000,flat,3,40000,blocked,12.936612,77.629511,1,managed
+43,120,Haralur Road,bengaluru,3000,villa,3,60000,blocked,12.904061,77.67189,1,managed
+44,120,Bannerghatta Main Rd,bengaluru,2078,flat,3,40700,blocked,12.875207,77.60985,1,managed
+45,15,0,bengaluru,850,flat,2,0,blocked,0,0,0,managed
+46,434,Marathalli,bengaluru,1740,flat,3,38587,available,12.953672,77.699952,1,managed
+47,438,Whitefield,bengaluru,1200,flat,2,25000,blocked,13.008087,77.756746,1,marketplace
+49,120,Whitefield,bengaluru,2400,flat,1,9900,blocked,13.020816,77.761856,1,managed
+50,0,,bengaluru,1228,flat,2,0,blocked,12.976922,77.678329,0,managed
+51,467,New Thippasandra,bengaluru,600,house,1,18000,blocked,12.972803,77.655353,0,managed
+52,478,Magarpatta City,pune,1040,flat,2,30000,blocked,18.510025,73.929418,2,managed
+53,0,,pune,1273,flat,2,0,blocked,,,0,managed
+54,528,Whitefield,bengaluru,1530,flat,3,45000,blocked,12.982625,77.746682,1,marketplace
+55,301,Bellandur,bengaluru,1678,flat,3,35000,occupied,12.917103,77.68997,1,marketplace
+56,557,Kadubeesanahalli,bengaluru,0,flat,4,68000,available,12.937827,77.699428,1,marketplace
+57,587,Chokkanahalli,bengaluru,1241,flat,3,30000,blocked,13.081106,77.625247,0,marketplace
+58,632,Whitefield,bengaluru,1852,flat,3,40000,available,12.982727,77.755101,1,marketplace
+61,478,Magarpatta City,pune,1280,flat,2,34000,blocked,18.511552,73.922345,2,managed
+62,776,Kadubeesanhalli,bengaluru,3435,flat,4,57000,partial,12.937191,77.699105,1,managed
+63,759,NGEF Layout,bengaluru,1350,house,3,35000,blocked,12.996604,77.656282,2,marketplace
+64,774,Sultan Palya,bengaluru,3000,flat,4,60000,blocked,13.027386,77.6051685,0,marketplace
+65,819,Bannerghata Road,bengaluru,2000,flat,3,36000,blocked,12.874537,77.609565,0,managed
+66,827,Electronics City Phase 1,bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+67,827,Electronics City Phase 1,bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+68,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+69,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+70,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+71,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+72,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+73,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+74,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+75,827,"Electronics City Phase 1,",bengaluru,1800,flat,3,54000,blocked,12.838127,77.673622,0,marketplace
+76,828,Bellandur,bengaluru,1650,flat,3,35000,blocked,12.926916,77.672716,1,marketplace
+77,862,Rahatani,pune,5000,flat,9,7500,blocked,18.602806,73.797667,0,marketplace
+78,871,Kharadi,pune,0,flat,3,8500,blocked,18.557601,73.951922,1,managed
+79,759,NGEF Layout,bengaluru,2700,flat,4,0,blocked,12.996604,77.656282,2,marketplace
+80,910,Bannerghatta Road,bengaluru,1300,flat,2,28000,occupied,12.86501,77.592802,0,marketplace
+81,911,Sarjapur Road,bengaluru,0,flat,3,38000,partial,12.919336,77.669601,1,marketplace
+82,803,Pimple Saudagar,pune,1200,flat,2,25000,blocked,18.593741,73.794757,0,marketplace
+83,939,Hoodi,bengaluru,0,flat,1,6000,blocked,12.997934,77.71811,0,managed
+85,942,Whitefield,bengaluru,1839,flat,3,52000,available,12.984999,77.752045,1,marketplace
+86,943,kaggadaspura main road,bengaluru,0,flat,2,17000,blocked,12.976462,77.678891,0,marketplace
+87,944,Koramangala,bengaluru,600,house,1,0,blocked,12.93097,77.631107,1,marketplace
+88,948,C V Raman Nagar,bengaluru,1340,flat,3,38000,blocked,12.98141,77.667063,0,marketplace
+89,956,Kadubeesanahalli,bengaluru,0,flat,5,82000,available,12.93711,77.699134,1,marketplace
+90,774,Ulsoor,bengaluru,1340,flat,3,33863,occupied,12.976728,77.625949,2,managed
+91,961,Whitefield,bengaluru,2245,flat,3,58000,blocked,12.962995,77.750582,0,marketplace
+93,944,Koramangala,bengaluru,0,house,1,19000,available,12.930974,77.631118,0,marketplace
+94,972,Mundhwa,pune,1400,flat,3,26000,blocked,18.527631,73.944924,0,marketplace
+95,944,Ejipura,bengaluru,0,flat,1,10900,available,12.93334,77.63288,0,marketplace
+96,1026,Haralur Road,bengaluru,1200,flat,3,35000,blocked,12.902963,77.662205,0,marketplace
+97,1050,HBR Layout,bengaluru,1835,flat,5,33000,partial,13.04642,77.63867,1,marketplace
+98,1051,Thanisandra,bengaluru,1720,flat,3,42000,available,13.0772208,77.6367349,0,marketplace
+99,1052,Bellandur,bengaluru,1874,flat,4,48000,available,12.92725,77.67161,2,marketplace
+100,1052,Bellandur,bengaluru,1474,flat,3,35000,blocked,12.92725,77.67161,2,marketplace
+102,1053,Bellandur,bengaluru,2275,flat,3,53700,blocked,12.9227169,77.6698289,1,marketplace
+103,1058,Sarjapur road,bengaluru,2134,flat,4,57000,partial,12.917848,77.67517,1,marketplace
+104,1063,Banerghatta,bengaluru,1588,flat,3,31000,available,12.898803,77.604945,0,marketplace
+105,1068,Whitefield,bengaluru,2023,flat,3,38850,occupied,12.985013,77.752131,1,managed
+107,1100,Hoodi,bengaluru,1446,flat,3,36000,blocked,13.005161,77.73456,2,marketplace
+108,1107,Outer Ring Road,bengaluru,1750,flat,3,47000,available,12.9205364,77.6937961,1,marketplace
+109,1119,Banerghatta,bengaluru,0,flat,2,24000,blocked,12.858825,77.593726,0,marketplace
+116,1123,Hadapsar,pune,0,flat,4,28000,blocked,18.494832,73.953429,1,marketplace
+117,798,Bellandur,bengaluru,1810,flat,3,44000,partial,12.9223732,77.6697387,1,marketplace
+119,1138,Haralur Road,bengaluru,0,flat,3,41000,available,12.903014,77.661968,2,marketplace
+120,1147,Wakad,pune,1000,flat,2,15000,blocked,18.602964,73.767885,0,marketplace
+123,1192,Aundh,pune,1389,flat,3,29000,partial,18.564511,73.800475,2,managed
+124,1196,Koramangla 2nd block,bengaluru,2000,flat,3,52000,blocked,12.9254517,77.6202681,0,marketplace
+125,943,kaggadaspura main road,bengaluru,0,flat,2,18600,occupied,12.976462,77.678891,0,managed
+126,1225,Kadubeesanahalli,bengaluru,0,flat,4,65000,partial,12.937111,77.699139,0,marketplace
+127,1026,Koramangala,bengaluru,1386,flat,3,48000,partial,12.927189,77.63846,0,marketplace
+128,1226,Aundh,pune,0,flat,2,19000,blocked,18.557087,73.817082,1,marketplace
+129,1271,Sarjapur road,bengaluru,1800,flat,3,42000,partial,12.90093,77.6738,1,marketplace
+130,1288,Whitefield,bengaluru,2100,flat,3,49000,available,12.991473,77.7268256,0,marketplace
+132,1293,Undri,pune,1000,flat,2,13000,blocked,18.450423,73.924711,0,marketplace
+134,1294,Whitefield,bengaluru,1200,flat,3,37000,blocked,12.9800749,77.7546106,0,marketplace
+135,1308,Undri,pune,1450,flat,3,27000,blocked,18.4521,73.91395,0,marketplace
+136,1311,Banerghatta Road,bengaluru,1800,flat,3,45000,partial,12.887641,77.597371,1,marketplace
+137,944,Koramangla 2nd block,bengaluru,250,flat,1,18000,blocked,12.930984,77.6289303,0,marketplace
+140,1353,"Bilekahalli, Bangalore",bengaluru,1580,flat,3,41000,blocked,12.893459,77.61791,0,managed
+141,1354,Kharadi,pune,1400,flat,3,43000,available,18.561675,73.948605,2,marketplace
+142,1367,Amanora,pune,1700,flat,3,40000,blocked,18.513934,73.940142,1,marketplace
+143,1349,Whitefield,bengaluru,0,flat,3,48000,partial,12.9846591,77.749127,0,marketplace
+145,1382,Hadapsar,pune,1400,flat,3,38000,available,18.510843,73.941837,1,marketplace
+147,1395,Whitefield,bengaluru,1600,flat,3,37000,available,12.983954,77.754194,1,marketplace
+148,1396,Whitefield,bengaluru,1800,flat,3,37000,blocked,12.983954,77.754194,0,marketplace
+149,1410,Viman Nagar,pune,3500,villa,5,79000,blocked,18.568477,73.914526,1,marketplace
+150,1412,Magarpatta City,pune,1400,flat,3,47000,available,18.511596,73.922553,1,marketplace
+151,1414,Horamavu,bengaluru,2500,flat,7,90000,blocked,13.0229682,77.6589196,1,marketplace
+152,1417,Whitefield,bengaluru,1800,flat,3,40000,available,12.987328,77.725396,1,marketplace
+153,1414,Horamavu,bengaluru,1500,flat,4,30000,blocked,13.0229682,77.6589196,0,marketplace
+154,1438,Wakad,pune,1400,flat,3,34000,partial,18.601982,73.759675,1,marketplace
+155,1414,sarjapur,bengaluru,282,flat,1,15500,blocked,12.9198409,77.6683616,1,marketplace
+156,1414,sarjapur,bengaluru,278,flat,2,15000,blocked,12.9198409,77.6683616,1,marketplace
+157,1412,Magarpatta City,pune,1500,flat,3,47000,partial,18.513531,73.922152,1,marketplace
+158,1600,Viman Nagar,pune,1500,flat,3,38000,occupied,18.567363,73.917675,1,managed
+159,1472,1st main Pai Layout,bengaluru,1200,flat,2,30000,available,12.9943483,77.6647594,2,marketplace
+160,1475,WHitefield,bengaluru,1740,flat,3,47000,available,12.9849884,77.7498673,2,marketplace
+161,1414,sarjapur,bengaluru,217,flat,2,13500,blocked,12.9198409,77.6683616,0,marketplace
+162,1414,sarjapur,bengaluru,0,flat,2,13500,blocked,12.9198409,77.6683616,0,marketplace
+163,1414,sarjapur,bengaluru,170,flat,2,12500,blocked,12.9198409,77.6683616,0,marketplace
+164,1414,sarjapur,bengaluru,167,flat,2,12500,blocked,12.9198409,77.6683616,0,marketplace
+165,1414,sarjapur,bengaluru,130,flat,2,12500,blocked,12.9198409,77.6683616,0,marketplace
+166,1414,sarjapur,bengaluru,140,flat,2,12000,blocked,12.9198409,77.6683616,0,marketplace
+167,1414,sarjapur,bengaluru,115,flat,2,13000,blocked,12.9198409,77.6683616,0,marketplace
+168,1414,sarjapur,bengaluru,151,flat,2,13000,blocked,12.9198409,77.6683616,0,marketplace
+169,1414,sarjapur,bengaluru,112,flat,1,11000,blocked,12.9198409,77.6683616,0,marketplace
+170,1414,sarjapur,bengaluru,330,flat,2,14500,blocked,12.9198409,77.6683616,0,marketplace
+171,1414,Sarjapur,bengaluru,272,flat,2,14000,blocked,12.9198409,77.6683616,1,marketplace
+172,1487,Wakad,pune,1400,flat,4,42000,occupied,18.6019,73.7596,2,marketplace
+173,7,Koramangala,bengaluru,100,flat,0,2500,available,0,0,1,marketplace
+174,1494,Kadubeesanahalli,bengaluru,1200,flat,2,30000,blocked,12.9330799,77.6958949,0,marketplace
+175,1510,Electronic City,bengaluru,1500,flat,3,21000,blocked,12.829268,77.662317,0,marketplace
+176,1511,Banaglore,bengaluru,1600,flat,3,45000,blocked,12.9166373,77.6710103,1,marketplace
+177,1513,Whitefield,bengaluru,0,flat,3,0,available,12.979745,77.751451,1,marketplace
+178,1518,Sarjapur road,bengaluru,2035,flat,4,60000,available,12.9097252,77.6728556,0,marketplace
+179,1525,Hadapsar,pune,1600,flat,3,38000,partial,18.511108,73.941624,1,marketplace
+180,1542,Bellandur,bengaluru,0,flat,4,51360,partial,12.924014,77.682961,1,managed
+181,1550,Magarpatta City,pune,1800,flat,4,59000,blocked,18.50785,73.926969,0,marketplace
+182,772,Mahadevpura,bengaluru,4000,villa,4,75000,partial,12.9780742,77.6965578,1,marketplace
+183,1576,Amanora,pune,0,flat,3,35000,partial,0,0,1,marketplace
+184,1593,Whitefield,bengaluru,1000,flat,2,20000,blocked,12.983964,77.7520049,0,marketplace
+185,1367,Magarpatta City,pune,0,flat,2,45000,blocked,0,0,1,marketplace
+186,1595,Kadubeesanahalli,bengaluru,1700,flat,3,46000,occupied,12.9330903,77.6944743,0,marketplace
+187,1603,Mahadevpura,bengaluru,1450,flat,3,36000,available,12.9755919,77.7041804,0,marketplace
+188,1634,Hinjewadi,pune,800,flat,1,17000,occupied,18.34535,73.44114,0,marketplace
+189,1635,Magarpatta,pune,1600,flat,3,47000,available,18.31096,73.55376,2,marketplace
+191,1641,Kharadi,pune,676,flat,1,16000,blocked,18.33272,73.56534,0,marketplace
+192,1367,Amanora,pune,1600,flat,3,41000,blocked,18.31018,73.565,2,marketplace
+193,1643,Mahadevpura,bengaluru,1449,flat,3,34000,blocked,12.9914202,77.6731994,0,marketplace
+194,1670,Kharadi,pune,888,flat,2,19000,partial,18.557587,73.94817,0,marketplace
+195,1672,Kharadi,pune,676,flat,1,16000,blocked,18.557587,73.94817,0,marketplace
+196,1672,Kharadi,pune,888,flat,2,15000,blocked,18.557587,73.94817,0,marketplace
+197,1672,Kharadi,pune,888,flat,2,22000,blocked,18.557587,73.94817,0,marketplace
+198,1672,Kharadi,pune,1036,flat,2,24000,blocked,18.557587,73.94817,0,marketplace
+200,1688,Amanora,pune,1200,flat,3,32000,available,18.518541,73.948022,1,marketplace
+201,1695,bellandur,bengaluru,2520,flat,3,48000,available,12.9205264,77.6937651,1,marketplace
+202,1698,bellandur,bengaluru,2500,flat,4,70000,blocked,12.9227169,77.6698289,0,marketplace
+203,1700,Bellandur,bengaluru,1720,flat,3,46000,partial,12.9205264,77.6937651,1,marketplace
+204,1703,Bellandur,bengaluru,1700,flat,3,39000,occupied,12.9170451,77.6954451,0,marketplace
+205,944,Koramangla 2nd block,bengaluru,300,flat,2,14000,blocked,12.9357528,77.6273636,0,marketplace
+206,1718,JP Nagar,bengaluru,2200,house,4,35000,blocked,12.892173,77.594246,1,managed
+207,1728,Hinjewadi phase 2,pune,1547,flat,3,0,blocked,18.599985,73.721557,1,marketplace
+208,1731,amanora,pune,1000,flat,6,34000,blocked,18.511779,73.938171,1,marketplace
+209,1729,Koregaon Park Ext,pune,1500,flat,6,44000,blocked,18.531908,73.912678,1,marketplace
+211,1733,Kharadi,pune,1158,flat,2,0,available,18.56104,73.946797,1,marketplace
+212,1737,Phurusngi,pune,1100,flat,2,21000,blocked,18.484035,73.957059,2,marketplace
+213,1738,Kharadi,pune,888,flat,2,30000,partial,18.557877,73.950817,2,marketplace
+214,1758,Basapura,bengaluru,1000,flat,2,24000,occupied,12.864987,77.652149,2,marketplace
+215,1777,HSR layout,bengaluru,1500,flat,3,40000,blocked,12.9046293,77.6447575,0,marketplace
+216,1792,Magarpatta,pune,1100,flat,2,28500,partial,18.512404,73.9295955,0,marketplace
+217,1794,magarpatta,pune,1300,flat,3,38000,blocked,18.510593,73.927621,0,marketplace
+218,1799,whitefield,bengaluru,1760,flat,3,43000,partial,12.98731,77.723366,1,marketplace
+219,1412,Wakad,pune,1000,flat,2,22000,blocked,18.592115,73.769648,0,marketplace
+220,1823,mundhwa,pune,2000,house,5,45000,blocked,18.5332414,73.9169852,1,marketplace
+221,1833,Wagholi,pune,1600,flat,3,36000,blocked,18.58275,73.97205,0,marketplace
+222,1834,Hadapsar,pune,2000,flat,6,64000,blocked,18.50504,73.928618,1,marketplace
+224,1867,HSR Layout,bengaluru,1800,flat,3,46000,available,12.8999794,77.6463803,2,marketplace
+225,1877,Koregaon Park,pune,1300,flat,3,38000,blocked,18.540031,73.8967353,0,marketplace
+226,1877,Kalyani Nagar,pune,1400,flat,3,45000,blocked,18.549837,73.901919,0,marketplace
+227,1878,whitefield,bengaluru,0,flat,3,39000,blocked,12.983964,77.7541936,0,marketplace
+228,1879,Akshay Nagar,bengaluru,0,flat,3,29000,available,12.8829614,77.6102592,0,marketplace
+229,1867,HSR Layout,bengaluru,0,flat,3,46000,blocked,12.8999088,77.6445617,0,marketplace
+230,1923,kharadi,pune,1600,flat,3,44000,available,18.55106,73.936104,1,marketplace
+231,1924,mundhwa,pune,1100,flat,2,30000,partial,18.5314441,73.9114753,1,marketplace
+232,1928,Jp Nagar 4th Phase,bengaluru,0,flat,1,15000,occupied,12.9061559,77.5989983,1,marketplace
+233,1542,Bellandur,bengaluru,1640,flat,3,39000,available,12.9205316,77.6937651,1,managed
+234,1928,Jp Nagar 4th Phase,bengaluru,0,flat,2,22000,partial,12.9061559,77.5989983,0,marketplace
+235,1928,Jp Nagar 4th Phase,bengaluru,0,flat,2,22000,partial,12.9061559,77.5989983,0,marketplace
+236,1928,Jp Nagar 4th Phase,bengaluru,0,flat,4,22000,occupied,12.9061559,77.5989983,0,marketplace
+237,1928,Jp Nagar 4th Phase,bengaluru,0,flat,2,22000,available,12.9061559,77.5989983,1,marketplace
+238,1931,Basapura,bengaluru,0,flat,2,24000,available,12.8649922,77.652149,2,marketplace
+239,1955,Singasandra,bengaluru,0,flat,3,30100,partial,12.8787316,77.6467323,1,marketplace
+240,1955,Singasandra,bengaluru,0,flat,3,34400,available,12.8787316,77.6467323,1,marketplace
+241,1955,Singasandra,bengaluru,0,flat,3,30100,partial,12.8787316,77.6467323,1,marketplace
+242,348,whitefield,bengaluru,1300,flat,2,30000,occupied,12.9621546,77.7461421,0,managed
+243,911,thanisandra,bengaluru,933,flat,3,24500,available,13.0830728,77.6406423,0,marketplace
+244,911,thanisandra,bengaluru,933,flat,3,25500,occupied,13.0830728,77.6406423,0,marketplace
+245,2023,Bannerghatta,bengaluru,0,flat,2,23500,occupied,12.8668815,77.5922054,1,managed
+246,2066,Hebbal,bengaluru,1800,flat,3,47000,blocked,13.0524332,77.5940354,1,marketplace
+247,2067,Varthur,bengaluru,1250,flat,2,27000,occupied,12.9440504,77.7543801,1,marketplace
+248,2071,Behind Inorbit mall,pune,1020,flat,2,21000,occupied,18.558381,73.919966,0,managed
+249,2129,Electronic City,bengaluru,1449,flat,3,23220,occupied,12.8535131,77.650247,0,managed
+250,2130,Wagholi,pune,950,flat,1,14000,blocked,18.570833,73.977432,0,marketplace
+251,2132,Devanahalli,bengaluru,1200,flat,2,20000,blocked,13.231502,77.7019937,0,marketplace
+252,2133,B.T Kawde road,pune,550,flat,1,19000,blocked,18.52037,73.906735,0,marketplace
+253,2135,Kharadi,pune,950,flat,2,22000,blocked,18.55089,73.9356,0,marketplace
+254,2157,Wagholi,pune,0,flat,1,9000,blocked,18.576861,73.957444,0,marketplace
+255,2206,hadapsar,pune,0,flat,4,41000,occupied,18.5173,73.947231,0,managed
+256,2213,B.T Kawde road,pune,0,villa,3,40000,blocked,18.5249,73.9073,0,marketplace
+257,2277,Whitefield,bengaluru,1830,flat,3,39000,available,12.9850691,77.7492334,1,managed
+258,2245,Kumaraswamy Layout,bengaluru,1100,flat,2,22000,available,12.9103072,77.5665329,1,marketplace
+259,2289,Jayanagar 7th Block,bengaluru,1500,flat,3,40000,blocked,12.929968,77.5777048,0,marketplace
+260,2290,Sarjapur,bengaluru,1050,flat,2,24000,available,12.9026286,77.7047542,0,marketplace
+261,804,Gunjur Village,bengaluru,1216,flat,2,30000,available,12.9299576,77.7401083,0,marketplace
+262,2341,Gunjur Village,bengaluru,1216,flat,2,30000,available,12.9299576,77.7401083,0,marketplace
+263,2344,Brookefield,bengaluru,0,flat,3,40000,blocked,12.9567531,77.728298,0,marketplace
+264,2345,Vittasandra,bengaluru,1405,flat,3,32000,available,12.8600076,77.641529,0,marketplace
+265,2066,Hebbal,bengaluru,1800,flat,3,38000,partial,13.0524332,77.5940354,1,managed
+266,2359,Electronic City,bengaluru,1550,flat,3,33000,blocked,12.8361003,77.6729773,0,marketplace
+267,2398,wakad,pune,0,flat,4,35000,partial,18.6022,73.759659,0,marketplace
+268,2390,Hinjewadi,pune,0,flat,1,16500,occupied,18.59066,73.743176,1,marketplace
+269,2390,Hinjewadi,pune,0,flat,1,16500,blocked,18.59066,73.743176,0,marketplace
+270,2444,Harlur,bengaluru,0,flat,3,39000,available,12.895455,77.6668704,1,marketplace
+271,2461,Thanisandra,bengaluru,0,flat,4,85000,blocked,13.0398047,77.6124624,0,marketplace
+272,2482,Electronic City,bengaluru,0,flat,2,22000,available,12.7995085,77.6563883,0,marketplace
+273,2501,Varthur,bengaluru,0,flat,3,28000,blocked,12.935376,77.744022,0,marketplace
+274,2502,Bagalur,bengaluru,0,flat,2,25000,available,13.1211188,77.6133981,0,marketplace
+275,2503,Lotte Golla Halli,bengaluru,0,flat,4,40000,available,13.045021,77.566175,0,marketplace
+276,2504,Varthur,bengaluru,1500,flat,4,50000,blocked,12.9299576,77.7401083,0,marketplace
+277,2505,Hosur Road,bengaluru,1836,flat,3,60000,partial,12.9024372,77.6313115,1,marketplace
+278,2523,Koramangala,bengaluru,0,flat,5,90000,available,12.9402838,77.6218653,1,marketplace
+279,2547,Doddakamanhalli,bengaluru,0,flat,3,477000,occupied,12.8608295,77.6016389,2,marketplace
+280,2547,Hulimavu,bengaluru,0,flat,3,530000,available,12.8608295,77.6016389,1,marketplace
+281,2547,VV Puram,bengaluru,0,flat,10,675000,occupied,12.9516351,77.5751311,2,marketplace
+282,2548,Electronic City,bengaluru,0,flat,2,28000,available,12.8358007,77.6650783,0,marketplace
+283,2511,JP Nagar,bengaluru,1200,flat,2,22000,blocked,12.9096063,77.5719493,0,managed
+284,2564,Electronic City,bengaluru,1090,flat,2,13100,occupied,12.8268197,77.690406,1,managed
+285,2125,Thyvakanahally,bengaluru,0,flat,5,3000,occupied,12.8341919,77.7805698,1,managed
+286,2591,Vivek Nagar,bengaluru,1000,flat,2,26000,available,12.9535855,77.6195189,0,marketplace
+287,2615,Whitefield,bengaluru,1000,flat,2,23000,available,12.9718591,77.766954,0,marketplace
+288,2616,Electronic City,bengaluru,1342,flat,3,25000,available,12.8322016,77.6610866,0,marketplace
+289,2617,Bannerghatta,bengaluru,1750,flat,3,45000,blocked,12.8755992,77.6102083,0,marketplace
+290,2626,Whitefield,bengaluru,1272,flat,2,30000,occupied,12.9852588,77.7518918,0,managed
+291,2639,HSR Layout,bengaluru,1200,flat,3,23000,occupied,12.9015983,77.650356,0,managed
+292,2640,Sahakar Nagar,bengaluru,2000,flat,3,40000,available,13.0633563,77.5783238,0,marketplace
+293,2641,Brookefield,bengaluru,1200,flat,3,46200,available,12.9657069,77.7215251,2,marketplace
+294,2645,Bannerghatta,bengaluru,2000,flat,3,34000,occupied,12.8715634,77.5920763,0,managed
+295,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+296,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+297,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+298,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+299,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+300,2655,Sahakar Nagar,bengaluru,1000,flat,2,25000,available,13.0633666,77.5832653,0,marketplace
+301,2770,Brookefield,bengaluru,2527,villa,4,50000,available,12.8995119,77.7041704,1,marketplace
+302,2771,Brookefield,bengaluru,2527,villa,4,50000,available,12.8995119,77.7041704,2,marketplace
+303,2129,Panathur,bengaluru,1000,flat,2,25000,available,12.8995119,77.7041704,0,marketplace
+304,2772,Electronic City,bengaluru,1200,flat,3,25000,available,12.8995119,77.7041704,2,marketplace
+305,2773,Kanakapura,bengaluru,2500,flat,3,35000,available,12.8652648,77.5206788,0,marketplace
+306,2547,Doddakammanahalli,bengaluru,0,flat,23,408000,occupied,12.8665113,77.6019964,1,marketplace
+307,2828,Whitefield,bengaluru,2000,flat,3,55000,available,12.9850691,77.7492334,1,marketplace
+308,2842,Baner,pune,0,flat,4,6500,blocked,18.5558346,73.7632628,0,marketplace
+309,2842,Baner,pune,0,flat,3,39000,available,18.5558346,73.7632628,0,marketplace
+310,2843,Fursungi,pune,0,flat,1,18000,available,18.4714005,73.9730285,0,marketplace
+311,2868,Income Tax Layout,bengaluru,500,flat,3,53000,available,12.996266,77.656367,2,marketplace
+312,2869,HSR Layout,bengaluru,3200,flat,5,80000,available,12.910056,77.631361,1,marketplace
+313,2870,Amruthahalli,bengaluru,1720,flat,3,40000,available,13.0665509,77.5957702,0,marketplace
+314,2870,Amruthahalli,bengaluru,1720,flat,3,40000,available,13.0665509,77.5957702,0,marketplace
+315,2876,Koregaon Park Annex,pune,0,flat,4,52000,blocked,18.5316539,73.9107048,0,managed
+316,2876,Koregaon Park Annex,pune,0,flat,4,52000,available,18.5316539,73.9107048,0,managed
+317,2895,Electronic City,bengaluru,1028,flat,3,25000,available,12.8535131,77.650247,0,marketplace
+318,771,Sarjapur Main Road,bengaluru,1447,flat,3,30000,available,12.898186,77.702837,0,marketplace
