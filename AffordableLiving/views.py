@@ -196,16 +196,25 @@ def getImages(propertyIds, qdata):
     return dataFrame
 
 
-def getRoomDetails(rooms,propertyIds):
+def getRoomDetails(properties,rooms,propertyIds,family):
     print("Inside getRoomDetails() .... ")
-    room = pd.DataFrame([], columns=['rooms'], index=propertyIds)
+    room = pd.DataFrame([], columns=['rooms','minimunRent','maximumRent'], index=propertyIds)
+
     for i in propertyIds:
         condition = rooms['property_id'] == i
         SpecificRoom = rooms[condition]
+        # minimumRent = min(list(SpecificRoom.rent))
+        # maximumRent = max(list(SpecificRoom.rent))
         #     print(gapminder_2002)
         JsonResponseSTR = SpecificRoom.to_json(orient='records')
         JsonRes = json.loads(JsonResponseSTR)
         room.at[i, 'rooms'] = JsonRes
+        if(family == 0 and (len(list(SpecificRoom.rent)) != 0)):
+            room.at[i, 'minimunRent'] = min(list(SpecificRoom.rent))
+            room.at[i, 'maximumRent'] = max(list(SpecificRoom.rent))
+        else:
+            room.at[i, 'minimunRent'] = properties.at[i, 'rent']
+            room.at[i, 'maximumRent'] = properties.at[i, 'rent']
     return room
 
 @csrf_exempt
@@ -445,7 +454,10 @@ def getRecommendedProperties(request):
     #
     rank = pd.DataFrame(UserPropertyDistance.loc[0,].tolist(), columns=['score'], index=properties.index)
     propertyId = pd.DataFrame(properties.index, columns=['id'], index=properties.index)
-    rooms = getRoomDetails(roomsDF, properties.index)
+    family = 0
+    if(propertyType == 4):
+        family = 1
+    rooms = getRoomDetails(properties, roomsDF, properties.index, family)
     properties.image = getImages(properties.index,qdata)
     properties = pd.concat([propertyId, properties,rooms, rank, distance,vacancyAge], axis=1)
 
@@ -505,6 +517,8 @@ def central_model(request):
     maxBudget = int(received_json_data['maxBudget'])
     bhkcount = int(received_json_data['bhkCount'])
     variant = int(received_json_data['variant'])
+
+
 
     # Getting the User's location's data
     geolocator = Nominatim(user_agent="specify_your_app_name_here")
@@ -621,7 +635,7 @@ def central_model(request):
         wDistanceLessThan2KM = 15
         wDistanceLessThan5KM = 12
         wDistanceLessThan10KM = 11
-        wGoldenProperties = 20
+        wGoldenProperties = 30
         wNonGoldenProperties = 0
         wRentBased = 10
         wManaged = 18
@@ -752,7 +766,11 @@ def central_model(request):
     # print(vacancyAge)
     # Unified Vectors
     propertiesColumns = budgetList
-    rooms = getRoomDetails(roomsDF, properties.index)
+    family = 0
+    if (propertyType == 4):
+        family = 1
+    rooms = getRoomDetails(properties, roomsDF, properties.index, family)
+
     properties.image = getImages(properties.index, qdata)
     # print("\nCreating Properties Unified Vector and assigning wieghts to them......\n")
     print("Vector Creation and Weights assignment ....")
@@ -767,6 +785,7 @@ def central_model(request):
     #     budgetName = "rent-" + str(rent) + "-" + str(rent + 5000)
     #     propertyUnifiedVector.at[i, budgetName] = 8
     if (propertyType == '4'):
+        # minimumBudget = min(properties.rent)
         for i in properties.index:
             rent = properties.at[i, 'rent']
             rent = (rent // 5000) * 5000
@@ -833,5 +852,11 @@ def central_model(request):
     for i in range(leng):
         result.append(jsonResp[i])
         result[i]['rank'] = i + 1
+    propertyIds = []
+    for i in range(leng):
+        propertyIds.append(int(jsonResp[i]['id']))
+
+
     print("-------------- End ----------------")
-    return JsonResponse({'response': result})
+    
+    return JsonResponse({'request':received_json_data,'propertyIds' : propertyIds,'response': result})
