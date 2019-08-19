@@ -483,21 +483,6 @@ def getRecommendedProperties(request):
     print("\n-------------- End ----------------")
     return JsonResponse({'response': result})
 
-
-@csrf_exempt
-def report(request):
-
-    print("_________________________________________ Start ____________________________________________")
-    print("_________________________________________ End ____________________________________________")
-    return HttpResponse(5)
-
-def locality_variant():
-    return 5
-def affordability_variant():
-    return 5
-def luxury_variant():
-    return 5
-
 @csrf_exempt
 def central_model(request):
     print("\n-------------- Start ----------------\n")
@@ -518,6 +503,13 @@ def central_model(request):
     bhkcount = int(received_json_data['bhkCount'])
     variant = int(received_json_data['variant'])
 
+    # Parametres to consider in Luxury Variant
+
+    # Uncomment after approval
+    if(variant == 3):
+        likeliness_normal = int(received_json_data['likeliness_normal'])
+        willingToShareRoom = int(received_json_data['willingToShareRoom'])
+        willingToShareProperty = int(received_json_data['willingToShareProperty'])
 
 
     # Getting the User's location's data
@@ -551,7 +543,11 @@ def central_model(request):
     bhkList.append(bhkcount)
     bhkList.append(bhkcount + 1)
 
-    if (propertyType == '4'):
+    if(variant == 3):
+        if(likeliness_normal >= 8):
+            properties = properties[properties['golden'] == 1]
+
+    if (propertyType == '4' and willingToShareProperty == 0):
         properties = properties[properties['status'] == 'available']
     else:
         properties = properties[properties.status.isin(statuses)]
@@ -635,7 +631,7 @@ def central_model(request):
         wDistanceLessThan2KM = 15
         wDistanceLessThan5KM = 12
         wDistanceLessThan10KM = 11
-        wGoldenProperties = 30
+        wGoldenProperties = 20
         wNonGoldenProperties = 0
         wRentBased = 10
         wManaged = 18
@@ -687,10 +683,11 @@ def central_model(request):
     theMaxBudget = maximum_property_rent if maximum_property_rent > maxBudget else maxBudget
     print("\nThe minimum & maximum budgets for Recommendation System are ", theMinBudget, "and", theMaxBudget,
           "respectively.\n")
-    minNum = (theMinBudget // 5000) * 5000
-    maxNum = (theMaxBudget // 5000) * 5000
+    minNum = int((theMinBudget // 5000) * 5000)
+    maxNum = int((theMaxBudget // 5000) * 5000)
 
     budgetList = []
+    # print(minNum, maxNum)
     for i in range(minNum, maxNum + 1, 5000):
         budgetName = "rent-" + str(i) + "-" + str(i + 5000)
         budgetList.append(budgetName)
@@ -788,7 +785,7 @@ def central_model(request):
         # minimumBudget = min(properties.rent)
         for i in properties.index:
             rent = properties.at[i, 'rent']
-            rent = (rent // 5000) * 5000
+            rent = int((rent // 5000) * 5000)
             budgetName = "rent-" + str(rent) + "-" + str(rent + 5000)
             propertyUnifiedVector.at[i, budgetName] = wRentBased
     else:
@@ -804,9 +801,9 @@ def central_model(request):
     wCommisionEqualTo14 = 11
     wCommisionGreaterThan14 = 12
     if(variant == 1 or variant == 2):
-        budgets = (np.zeros(len(budgetList))).tolist() + [wDistanceLessThan2KM, wDistanceLessThan5KM, wDistanceLessThan10KM, wManaged, wMarketPlaced, wAreaLessThan1000, wAreaLessThan1700, wAreaGreaterThan1700, wGoldenProperties, wVacancyAgeLessThan50, wVacancyAgeLessThan120, wVacancyAgeGreaterThan120, wCommisionLessThan14, wCommisionEqualTo14, wCommisionGreaterThan14]
-    else:
         budgets = (np.zeros(len(budgetList))).tolist() + [wDistanceLessThan2KM, wDistanceLessThan5KM, wDistanceLessThan10KM, wManaged, wMarketPlaced, wAreaLessThan1000, wAreaLessThan1700, wAreaGreaterThan1700, wNonGoldenProperties, wVacancyAgeLessThan50, wVacancyAgeLessThan120, wVacancyAgeGreaterThan120, wCommisionLessThan14, wCommisionEqualTo14, wCommisionGreaterThan14]
+    else:
+        budgets = (np.zeros(len(budgetList))).tolist() + [wDistanceLessThan2KM, wDistanceLessThan5KM, wDistanceLessThan10KM, wManaged, wMarketPlaced, wAreaLessThan1000, wAreaLessThan1700, wAreaGreaterThan1700, wGoldenProperties, wVacancyAgeLessThan50, wVacancyAgeLessThan120, wVacancyAgeGreaterThan120, wCommisionLessThan14, wCommisionEqualTo14, wCommisionGreaterThan14]
 
     # print("\nCreating User Unified Vector and assigning wieghts to them......\n")
     # print(propertyUnifiedVector.columns)
@@ -834,8 +831,15 @@ def central_model(request):
     properties = pd.concat([propertyId, properties, rooms, rank, distance, vacancyAge], axis=1)
 
     # print("\n Filtering Data as per some conditionxs to improve the user's experience")
-    condition = properties['distance'] <= 10.0
-    SpecificProperties = properties[condition]
+    SpecificProperties = properties
+    if(variant == 3):
+        if(likeliness_normal < 8):
+            condition = properties['distance'] <= 10.0
+            SpecificProperties = properties[condition]
+    else:
+        condition = properties['distance'] <= 10.0
+        SpecificProperties = properties[condition]
+
     # print("\nConverting the data into JSON Format")
     JsonResponseSTR = SpecificProperties.to_json(orient='records')
     # JsonResponseSTR = properties.to_json(orient='records')
