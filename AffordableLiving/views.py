@@ -26,7 +26,8 @@ import sshtunnel
 
 def affordableLiving(request):
     # htmlCode = "<html><h1>Affordable Living :</h1><p>This website is hosted to provide Micro Services to the Data Science Services for <a href = \"https://yourownroom.com/\">YourOwnRoom</a>, a house rental system for millinials.</p></html>"
-    htmlCode = "<html><p>This website is hosted by Uday Sai Tyada, just for show casing his skill-set. </p></html>"
+    # htmlCode = "<html><p>This website is hosted by Uday Sai Tyada, just for show casing his skill-set</p>.<p> I love working with micro service architechtures, and this is totally the back end part.</p><p>Please do refer the documentation for more clarity</p></html>"
+    htmlCode = "<html><p>This website is hosted by Uday Sai Tyada, just for show casing his skill-set.</p><p> I love working with micro service architechtures, and this is totally the back end part.</p><p>Please do refer the documentation for more clarity.</p></html>"
     return HttpResponse(htmlCode)
 
 # engine = engine = create_engine('mysql://yor_api:dev5440$@128.199.206.71:3306/yor_api')
