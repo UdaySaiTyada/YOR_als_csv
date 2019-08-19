@@ -4,6 +4,7 @@
     <list default="true" id="4ad61bda-42bc-4e45-a090-77552ef2c0f2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../bazinga_test/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AffordableLiving/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AffordableLiving/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOR_DataScience_Applications/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOR_DataScience_Applications/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
