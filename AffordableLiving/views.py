@@ -58,7 +58,7 @@ def getVacancyAge(properties,rooms,qdata):
     todayDate = datetime.date.today()
 
     for propertyId in propertyIds:
-        print("property Id: ", propertyId)
+        # print("property Id: ", propertyId)
         vacancyAge = []
         individualProperty = propertyUsers[propertyUsers['property_id'] == propertyId]
         # print(propertyId)
@@ -218,7 +218,7 @@ def getRecommendedProperties(request):
 
     ################################## Post Body Input ###############################################
 
-    received_json_data = json.loads(request.body)
+    received_json_data = json.loads(request.body.decode('utf-8'))
     locality = received_json_data['addressl1']
     city = received_json_data['city']
     gender = int(received_json_data['gender'])
