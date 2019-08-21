@@ -185,7 +185,7 @@ def getImages(propertyIds, qdata):
     images = images[imagesCondition]
     imagesCondition = images['objecttype'] == 'property'
     images = images[imagesCondition]
-    
+
     dataFrame = pd.DataFrame([], index=propertyIds, columns=['image'])
     for i in propertyIds:
         condition = images['primaryid'] == i
