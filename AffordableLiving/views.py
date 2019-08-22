@@ -219,6 +219,7 @@ def getRecommendedProperties(request):
     ################################## Post Body Input ###############################################
 
     received_json_data = json.loads(request.body.decode('utf-8'))
+    # print(received_json_data)
     locality = received_json_data['addressl1']
     city = received_json_data['city']
     gender = int(received_json_data['gender'])
