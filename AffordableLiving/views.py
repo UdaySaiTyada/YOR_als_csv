@@ -30,7 +30,7 @@ def affordableLiving(request):
     return HttpResponse(htmlCode)
 
 # engine = engine = create_engine('mysql://yor_api:dev5440$@128.199.206.71:3306/yor_api')
-engine = create_engine('mysql://yor_api:dev5440$@128.199.206.71:3306/yor_api')
+engine = create_engine('mysql://yor_api_prod:dev_prod5440$@api.yourownroom.com:3306/yor_api_prod', isolation_level="AUTOCOMMIT")
 
 def getVacancyAge(properties,rooms,qdata):
     print("Inside getVacancyAge()...")
@@ -222,7 +222,7 @@ def getRecommendedProperties(request):
     # print(received_json_data)
     locality = received_json_data['addressl1']
     city = received_json_data['city']
-    gender = int(received_json_data['gender'])
+    gender = str(received_json_data['gender'])
     propertyType = str(received_json_data['sharetype'])
     minBudget = int(received_json_data['minBudget'])
     maxBudget = int(received_json_data['maxBudget'])

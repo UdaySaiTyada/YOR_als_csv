@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -86,14 +86,24 @@ DATABASES = {
 
 
         # Development Server
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'yor_api',
-        'USER': 'yor_api',
-        'PASSWORD': 'dev5440$',
+        # 'ENGINE': 'django.db.backends.mysql',
+        #
+        # 'NAME': 'yor_api',
+        # 'USER': 'yor_api',
+        # 'PASSWORD': 'dev5440$',
+        # 'HOST': '128.199.206.71',
+        # 'PORT': '3306',
+        # 'OPTIONS': {}
 
-        'HOST': '128.199.206.71',
-        'PORT': '3306',
-        'OPTIONS': {'sql_mode': 'traditional',}
+        # Production Server
+        # 'ENGINE': 'django.db.backends.mysql',
+        #
+        # 'NAME': 'yor_api_prod',
+        # 'USER': 'yor_api_prod',
+        # 'PASSWORD': 'dev_prod5440$',
+        # 'HOST': '35.154.167.227',
+        # 'PORT': '3306',
+        # 'OPTIONS': {}
 }
 }
 
@@ -135,3 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
