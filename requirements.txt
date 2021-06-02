@@ -50,6 +50,6 @@ srsly==0.0.7
 sshtunnel==0.1.5
 thinc==7.0.8
 tqdm==4.32.2
-urllib3==1.25.3
+urllib3==1.26.5
 wasabi==0.2.2
 whitenoise==4.1.3
