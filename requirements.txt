@@ -24,7 +24,7 @@ mariasql==4
 murmurhash==1.0.2
 mysql==0.0.2
 mysqlclient==1.4.2.post1
-numpy==1.16.4
+numpy==1.22.0
 pandas==0.25.0
 paramiko==2.6.0
 plac==0.9.6
